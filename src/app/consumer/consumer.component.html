@@ -1,0 +1,7 @@
+<app-provider></app-provider>
+<app-provider #foo [coverTemplate]="coverTemplate"></app-provider>
+
+<ng-template #coverTemplate let-b="c">
+  Custom Inplementation!<button (click)="foo.click()">Consumer</button>
+  <h4>{{c.name}}—<span>{{c.author}}</span></h4>
+</ng-template>

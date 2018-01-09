@@ -1,0 +1,7 @@
+<ng-template #defaultCoverTemplate let-b="b">
+  ;)<button (click)="click()">Provider</button>
+  <h4>{{b.name}}—<span>{{b.author}}</span></h4>
+
+</ng-template>
+
+<ng-container *ngTemplateOutlet="coverTemplate || defaultCoverTemplate; context: coverCtx"></ng-container>
