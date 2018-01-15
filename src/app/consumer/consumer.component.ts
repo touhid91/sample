@@ -9,5 +9,8 @@ export class ConsumerComponent {
   c = {
     name: 'HP',
     author: 'J. K. Rowling'
-  }
+  };
+
+  url = 'https://avatars3.githubusercontent.com/u/30457514?s=88&v=4';
+  temp = url => `<img src=${url}/>`;
 }
